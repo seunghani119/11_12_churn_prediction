@@ -28,6 +28,5 @@ def main():
     models, result_df = ModelPC(logistic_model, sgd_model, tree_model, rf_model, gb_model, X_test, y_test)
     #crossValidation(models, X_train, y_train)
     gridSearchCV(rf_model, X_train, X_test, y_train, y_test)
-    print("test")
 if __name__ == "__main__":
     main()
